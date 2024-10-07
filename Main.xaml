@@ -1,0 +1,423 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="912.6666666666666,5139.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="topic" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:Int32" Name="index">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:String x:Key="SourceIdRef">ForEachRow_1</x:String>
+            <x:String x:Key="SourcePropertyName">CurrentIndex</x:String>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="lowest_date" />
+      <Variable x:TypeArguments="x:Int32" Name="temp_day" />
+      <Variable x:TypeArguments="x:Int32" Name="row_index" />
+      <Variable x:TypeArguments="x:String" Name="title" />
+      <Variable x:TypeArguments="x:String" Name="title_url" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="638,168.66666666666666" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="chrome" />
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="638,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="topic" Title="topic">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[topic]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="638,278" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="email" Title="email">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="638,1135.3333333333333" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="www.google.com">
+      <ui:OpenBrowser.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,936" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'TEXTAREA  APjFqb'" sap:VirtualizedContainerService.HintSize="450,189.33333333333334" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[topic+ &quot;[k(enter)]&quot;]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3132410e-a05a-4a10-81af-7cccec53e170" InformativeScreenshot="d93c35a430df5ff499eb50826736b1a7" Selector="&lt;webctrl tag='TEXTAREA' aaname='Search' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="450,139.33333333333334" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9329c985-226e-42c4-8e11-7c78f7ae9898" InformativeScreenshot="1cdfae16d31d21d0c5af1541ff229164" Selector="&lt;webctrl aaname='News' tag='DIV' innertext='News' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: uipath - Google Search" sap:VirtualizedContainerService.HintSize="450,490" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="af6905e3-d358-4fe6-b06c-51b894873d30" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='title'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='title Url'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='4' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="382,185.33333333333334" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="af6905e3-d358-4fe6-b06c-51b894873d30" Version="V4">
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.google.com/search?sca_esv=d6d0ae44b4ca9a27&amp;sxsrf=ADLYWIIq2-4fp1SbcEBAEXk8tzuZL9z0EQ:1728293545254&amp;q=uipath&amp;tbm=nws&amp;source=lnms&amp;fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J5MIFhvnvU242yFxzEEp3BekApeLFCP-yt1rlLqzmhw_-yjmy56-jU7vCqheuFOLmQRfAB99cxHld5c98wjVFx44OPD2XifQJ3oLvh7U8nPV6v3AtTCu5hoZeWRfyN25Emdpl97-fPb3rtztUklBAoY-k51Hul_gXY5gNHPfdAu3yLD0tw&amp;sa=X&amp;ved=2ahUKEwi5g9SW-_uIAxVE3jgGHQhzOlIQ0pQJegQIGRAB&amp;biw=1280&amp;bih=551&amp;dpr=1.5" DesignTimeRectangle="170, 436, 978, 2564" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='rso' tag='DIV' /&gt;" Guid="4efad7cc-4859-43c6-bec1-321c36b4a261" InformativeScreenshot="2c1484f8acb9ea2aad6530674fe9bf66.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*Google Search' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f414ca5b255d72bd81b08e1432835f33.jpg" Selector="&lt;html app='chrome.exe' title='uipath - Google Search' /&gt;" Title="uipath - Google Search" Url="https://www.google.com/search*" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:OpenBrowser.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:OpenBrowser>
+    <Assign sap:VirtualizedContainerService.HintSize="638,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[temp_day]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">100</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="638,1229.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="604,1029.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="date_news" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="570,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[date_news]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[CurrentRow(2).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[date_news.Contains(&quot;days&quot;)]" DisplayName="If days" sap:VirtualizedContainerService.HintSize="570,852" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="536,598.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Int32" Name="int_day" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="502,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_day]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[cint(date_news(0).ToString)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <If Condition="[int_day&lt;temp_day]" DisplayName="Finding minimum" sap:VirtualizedContainerService.HintSize="502,421.3333333333333" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_3">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Int32">[temp_day]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Int32">[int_day]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ForEachRow>
+    <If Condition="[temp_day=1]" sap:VirtualizedContainerService.HintSize="638,508" sap2010:WorkflowViewState.IdRef="If_3">
+      <If.Then>
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_5">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[lowest_date]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[temp_day.ToString+" day ago"]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,168" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[lowest_date]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[temp_day.ToString+" days ago"]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+    <ui:LookupDataTable CellValue="{x:Null}" LookupColumnName="{x:Null}" LookupDataColumn="{x:Null}" TargetColumnIndex="{x:Null}" TargetColumnName="{x:Null}" TargetDataColumn="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Lookup Data Table" sap:VirtualizedContainerService.HintSize="638,332.6666666666667" sap2010:WorkflowViewState.IdRef="LookupDataTable_2" LookupValue="[lowest_date]" RowIndex="[row_index]">
+      <ui:LookupDataTable.LookupColumnIndex>
+        <InArgument x:TypeArguments="s:Nullable(x:Int32)">
+          <Literal x:TypeArguments="s:Nullable(x:Int32)" Value="2" />
+        </InArgument>
+      </ui:LookupDataTable.LookupColumnIndex>
+    </ui:LookupDataTable>
+    <Assign sap:VirtualizedContainerService.HintSize="638,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[title]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[ExtractDataTable(row_index)(0).ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="638,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[title_url]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[ExtractDataTable(row_index)(1).ToString]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="638,118.66666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[title+Environment.NewLine+title_url]" />
+    <Sequence sap:VirtualizedContainerService.HintSize="638,391.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_11">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="ui:Image" Name="news" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'IMG  dimg_1'" sap:VirtualizedContainerService.HintSize="416,139.33333333333334" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[news]">
+        <ui:TakeScreenshot.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5044e4c7-751e-4034-a3e7-83fd5160b793" InformativeScreenshot="c966c3440d2927a1a824df19a98925e3" Selector="[string.Format(&quot;&lt;html app='chrome.exe' title='*Google Search' /&gt;&lt;webctrl aria-role='heading' tag='DIV' aaname='*{0}*' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='IMG' idx='*' /&gt;&quot;, title)]">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:TakeScreenshot.Target>
+      </ui:TakeScreenshot>
+      <ui:SaveImage DisplayName="Save Image" FileName="C:\Users\gayat\Documents\UiPath\news_bot\news.png" sap:VirtualizedContainerService.HintSize="416,160" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[news]" />
+    </Sequence>
+    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="[&quot;&lt;html&gt;&#xD;&#xA;&lt;head&gt;&#xD;&#xA;    &lt;title&gt;Email With Inline Image&lt;/title&gt;&#xD;&#xA;&lt;/head&gt;&#xD;&#xA;&lt;body&gt;&#xD;&#xA;    &lt;p&gt;&quot;+title+&quot;&lt;/p&gt;&#xD;&#xA;&#x9;&lt;p&gt;&quot;+title_url+&quot;&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;This Is an email With an inline image:&lt;/p&gt;&#xD;&#xA;    &lt;img src='news.png'&gt;&#xD;&#xA;    &lt;p&gt;Best regards,&lt;/p&gt;title&#xD;&#xA;    &lt;p&gt;Your Name&lt;/p&gt;&#xD;&#xA;&lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&quot;]" DisplayName="Send SMTP Mail Message" Email="gayatrisyadav2003@gmail.com" EnableSSL="True" From="gayatrisyadav2003@gmail.com" sap:VirtualizedContainerService.HintSize="638,324.6666666666667" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="True" Password="agat quvg zony zrrt" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Latest News" To="gayatri.yadav.comp.2021@vpkbiet.org">
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+      </ui:SendMail.Files>
+    </ui:SendMail>
+  </Sequence>
+</Activity>
